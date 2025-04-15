@@ -8,7 +8,7 @@ public class FuncionarioMain {
 
         System.out.print("Tipo de funcionário (1 = CLT, 2 = PJ): ");
         int tipo = scanner.nextInt();
-        scanner.nextLine(); // limpar o buffer
+        scanner.nextLine(); 
 
         System.out.print("Nome: ");
         String nome = scanner.nextLine();

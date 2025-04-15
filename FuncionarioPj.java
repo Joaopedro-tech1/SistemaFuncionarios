@@ -5,7 +5,7 @@ public class FuncionarioPj extends Funcionario {
     private int horasTrabalhadas;
 
     public FuncionarioPj(String nome, String cpf, double valorHora, int horasTrabalhadas) {
-        super(nome, cpf, 0); // Salário base = 0 para PJ
+        super(nome, cpf, 0);
         this.valorHora = valorHora;
         this.horasTrabalhadas = horasTrabalhadas;
     }

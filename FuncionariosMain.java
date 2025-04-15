@@ -6,9 +6,16 @@ public class FuncionarioMain {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Tipo de funcionário (1 = CLT, 2 = PJ): ");
-        int tipo = scanner.nextInt();
-        scanner.nextLine(); 
+        int tipo;
+        do {
+            System.out.print("Tipo de funcionário (1 = CLT, 2 = PJ): ");
+            tipo = scanner.nextInt();
+            scanner.nextLine();
+            
+            if (tipo != 1 && tipo != 2) {
+                System.out.println("Opção inválida. Tente novamente.");
+            }
+        } while (tipo != 1 && tipo != 2);
 
         System.out.print("Nome: ");
         String nome = scanner.nextLine();
